@@ -1,0 +1,128 @@
+# セキュリティ情報ソース一覧
+# type: rss (RSS/Atom/RDF) | cisa_kev (CISA KEV JSON)
+# category:
+#   vulnerability : 脆弱性情報
+#   advisory      : 注意喚起・インシデント
+#   os_app        : OS・アプリのアップデート情報
+#   browser       : ブラウザのアップデート情報
+#   outage        : サービス・クラウドの障害情報
+#   howto         : 二次情報・対策How-to・ニュース
+
+sources:
+  # --- 脆弱性DB・公的機関（日本） ---
+  - id: jvn_new
+    name: JVN iPedia 新着脆弱性
+    type: rss
+    url: https://jvndb.jvn.jp/ja/rss/jvndb_new.rdf
+    category: vulnerability
+    enabled: true
+
+  - id: jvn_advisory
+    name: JVN 脆弱性対策情報
+    type: rss
+    url: https://jvn.jp/rss/jvn.rdf
+    category: vulnerability
+    enabled: true
+
+  - id: jpcert
+    name: JPCERT/CC 注意喚起・緊急報告
+    type: rss
+    url: https://www.jpcert.or.jp/rss/jpcert.rdf
+    category: advisory
+    enabled: true
+
+  - id: ipa_alert
+    name: IPA 重要なセキュリティ情報
+    type: rss
+    url: https://www.ipa.go.jp/security/alert-rss.rdf
+    category: advisory
+    enabled: true
+
+  # --- 脆弱性DB・公的機関（海外） ---
+  - id: cisa_kev
+    name: CISA KEV (悪用が確認された脆弱性)
+    type: cisa_kev
+    url: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+    category: vulnerability
+    enabled: true
+
+  - id: cisa_advisories
+    name: CISA Cybersecurity Advisories
+    type: rss
+    url: https://www.cisa.gov/cybersecurity-advisories/all.xml
+    category: advisory
+    enabled: true
+
+  # --- OS・アプリケーション更新 ---
+  - id: msrc_sug
+    name: Microsoft Security Update Guide
+    type: rss
+    url: https://api.msrc.microsoft.com/update-guide/rss
+    category: os_app
+    enabled: true
+
+  - id: msrc_blog
+    name: Microsoft MSRC Blog
+    type: rss
+    url: https://msrc.microsoft.com/blog/feed/
+    category: os_app
+    enabled: true
+
+  # --- ブラウザ更新 ---
+  - id: chrome_releases
+    name: Google Chrome Releases
+    type: rss
+    url: https://chromereleases.googleblog.com/atom.xml
+    category: browser
+    enabled: true
+
+  - id: mozilla_security
+    name: Mozilla Security Blog
+    type: rss
+    url: https://blog.mozilla.org/security/feed/
+    category: browser
+    enabled: true
+
+  # --- サービス・クラウド障害情報 ---
+  - id: github_status
+    name: GitHub Status
+    type: rss
+    url: https://www.githubstatus.com/history.rss
+    category: outage
+    enabled: true
+
+  - id: cloudflare_status
+    name: Cloudflare Status
+    type: rss
+    url: https://www.cloudflarestatus.com/history.rss
+    category: outage
+    enabled: true
+
+  - id: aws_status
+    name: AWS Service Health
+    type: rss
+    url: https://status.aws.amazon.com/rss/all.rss
+    category: outage
+    enabled: true
+
+  - id: gcp_status
+    name: Google Cloud Status
+    type: rss
+    url: https://status.cloud.google.com/en/feed.atom
+    category: outage
+    enabled: true
+
+  # --- 二次情報・ニュース・How-to ---
+  - id: scannet_security
+    name: ScanNetSecurity
+    type: rss
+    url: https://scan.netsecurity.ne.jp/rss/index.rdf
+    category: howto
+    enabled: true
+
+  - id: bleeping_computer
+    name: BleepingComputer
+    type: rss
+    url: https://www.bleepingcomputer.com/feed/
+    category: howto
+    enabled: true

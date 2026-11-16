@@ -1,0 +1,69 @@
+name: Collect Security Info
+
+on:
+  schedule:
+    # 30分ごとに実行（UTC）
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+    inputs:
+      send_digest:
+        description: "日次まとめを即時送信する"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run collector
+        env:
+          DISCORD_WEBHOOK_DEFAULT: ${{ secrets.DISCORD_WEBHOOK_DEFAULT }}
+          DISCORD_WEBHOOK_URGENT: ${{ secrets.DISCORD_WEBHOOK_URGENT }}
+          DISCORD_WEBHOOK_VULNERABILITY: ${{ secrets.DISCORD_WEBHOOK_VULNERABILITY }}
+          DISCORD_WEBHOOK_ADVISORY: ${{ secrets.DISCORD_WEBHOOK_ADVISORY }}
+          DISCORD_WEBHOOK_OS_APP: ${{ secrets.DISCORD_WEBHOOK_OS_APP }}
+          DISCORD_WEBHOOK_BROWSER: ${{ secrets.DISCORD_WEBHOOK_BROWSER }}
+          DISCORD_WEBHOOK_OUTAGE: ${{ secrets.DISCORD_WEBHOOK_OUTAGE }}
+          DISCORD_WEBHOOK_HOWTO: ${{ secrets.DISCORD_WEBHOOK_HOWTO }}
+          DISCORD_WEBHOOK_DIGEST: ${{ secrets.DISCORD_WEBHOOK_DIGEST }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.send_digest }}" = "true" ]; then
+            ARGS="--send-digest"
+          fi
+          python -m src.main $ARGS
+
+      - name: Commit updated state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/state.json
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update state.json"
+            git push
+          fi

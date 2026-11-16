@@ -1,0 +1,103 @@
+# 優先度判定と通知振り分けルール
+
+# 優先度:
+#   urgent : 緊急（悪用確認済み・CVSS 9.0以上・公的機関の緊急注意喚起など）
+#   high   : 重要（CVSS 7.0以上・OS/ブラウザのセキュリティ更新・大規模障害など）
+#   normal : 通常（通常のアップデート・障害復旧・ニュース・How-to）
+#   digest : まとめ（低〜中程度の個別脆弱性など、1日1回まとめて通知）
+
+priority_rules:
+  # 無条件で緊急にするソースID
+  urgent_sources:
+    - cisa_kev
+    - jpcert
+    - ipa_alert
+
+  # タイトルや本文に含まれていたら緊急にするキーワード（大文字小文字無視）
+  urgent_keywords:
+    - "緊急"
+    - "注意喚起"
+    - "ゼロデイ"
+    - "zero-day"
+    - "0-day"
+    - "actively exploited"
+    - "in the wild"
+    - "ransomware"
+    - "ランサムウェア"
+    - "critical"
+    - "情報漏洩"
+    - "情報流出"
+
+  # 重要にするキーワード
+  high_keywords:
+    - "security update"
+    - "security fixes"
+    - "脆弱性"
+    - "セキュリティ更新"
+    - "アップデート"
+    - "outage"
+    - "incident"
+    - "障害"
+    - "investigating"
+    - "workaround"
+    - "回避策"
+    - "対策"
+
+  # CVSSスコアの閾値
+  cvss_urgent_threshold: 9.0
+  cvss_high_threshold: 7.0
+
+  # vulnerabilityカテゴリのうち、urgent/highに該当しないものはdigest（日次まとめ）に回す
+  digest_categories:
+    - vulnerability
+
+# ニュース等の二次情報からカテゴリを再分類するためのキーワード
+recategorize_keywords:
+  browser:
+    - "chrome"
+    - "firefox"
+    - "edge"
+    - "safari"
+    - "browser"
+    - "ブラウザ"
+  outage:
+    - "outage"
+    - "down"
+    - "障害"
+    - "復旧"
+    - "不具合"
+  os_app:
+    - "windows"
+    - "macos"
+    - "ios"
+    - "android"
+    - "apple"
+    - "microsoft"
+    - "adobe"
+    - "linux"
+
+# チャネル別の配信対象優先度
+routing:
+  discord:
+    - urgent
+    - high
+    - normal
+  slack:
+    - urgent
+    - high
+  line:
+    - urgent
+
+# 日次まとめ（digest）の配信設定（UTC時刻の指定、JST 08:00 = UTC 23:00）
+digest:
+  send_hour_utc: 23
+  max_items_per_digest: 30
+
+# AI要約（Gemini API）の設定
+ai_summarize:
+  # 無料枠節約のため、要約対象を絞る
+  target_priorities:
+    - urgent
+    - high
+  # 1回の実行あたりの最大要約件数
+  max_items_per_run: 10
