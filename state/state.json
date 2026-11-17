@@ -1,7 +1,5 @@
 {
   "seen_ids": [
-    "msrc_sug:6351c9dd367c4342",
-    "msrc_sug:6a4ac8e8035547d1",
     "msrc_sug:7366035ad7d67967",
     "msrc_sug:951d370418e13d4c",
     "msrc_sug:b518ba6bc6790533",
@@ -4999,7 +4997,9 @@
     "cloudflare_status:c56c8823f807370a",
     "cloudflare_status:7d837e953f724590",
     "aws_status:319314a787fdbb4b",
-    "bleeping_computer:56d6a416f1450fab"
+    "bleeping_computer:56d6a416f1450fab",
+    "aws_status:b0a1fe7230cda48e",
+    "bleeping_computer:c08cab8e8a4a3fcd"
   ],
   "http_cache": {
     "https://jvndb.jvn.jp/ja/rss/jvndb_new.rdf": {
@@ -5011,8 +5011,8 @@
       "last_modified": "Tue, 17 Nov 2026 06:00:01 GMT"
     },
     "https://www.jpcert.or.jp/rss/jpcert.rdf": {
-      "etag": "\"3495-6606fb0f8ddc0\"",
-      "last_modified": "Tue, 17 Nov 2026 02:31:27 GMT"
+      "etag": "\"3495-6607397c46500\"",
+      "last_modified": "Tue, 17 Nov 2026 07:10:44 GMT"
     },
     "https://www.ipa.go.jp/security/alert-rss.rdf": {
       "last_modified": "Wed, 11 Nov 2026 03:04:07 GMT"
@@ -5033,21 +5033,21 @@
       "last_modified": "Tue, 10 Nov 2026 18:36:02 GMT"
     },
     "https://www.githubstatus.com/history.rss": {
-      "etag": "W/\"7ff949972cf99c07bfb7d46d5bb58c44\""
+      "etag": "W/\"773d075356c53477e66a81cb8e48ad59\""
     },
     "https://www.cloudflarestatus.com/history.rss": {
       "last_modified": "Tue, 17 Nov 2026 06:23:22 GMT"
     },
     "https://status.aws.amazon.com/rss/all.rss": {
-      "etag": "\"8b053e210b21943838dbb9b9c43aed15\"",
-      "last_modified": "Tue, 17 Nov 2026 06:29:36 GMT"
+      "etag": "\"c53a4eac1aa5aa1e31f652aa043ac027\"",
+      "last_modified": "Tue, 17 Nov 2026 07:39:16 GMT"
     },
     "https://status.cloud.google.com/en/feed.atom": {
-      "last_modified": "Tue, 17 Nov 2026 06:28:31 GMT"
+      "last_modified": "Tue, 17 Nov 2026 07:38:53 GMT"
     },
     "https://www.bleepingcomputer.com/feed/": {
-      "etag": "0cf2ad18e2d9a32ddeb2781bf18ecbde",
-      "last_modified": "Tue, 17 Nov 2026 06:21:05 GMT"
+      "etag": "a222502fee88eb1521caf45c6ab100b9",
+      "last_modified": "Tue, 17 Nov 2026 07:39:32 GMT"
     }
   },
   "digest_queue": [
