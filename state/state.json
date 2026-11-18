@@ -1,8 +1,5 @@
 {
   "seen_ids": [
-    "msrc_sug:3697ebdfff5aad29",
-    "msrc_sug:d6a7051591c9e689",
-    "msrc_sug:b36986efec992454",
     "msrc_sug:857384496200cb83",
     "msrc_sug:a0415b5ce814346f",
     "msrc_sug:48626e23d1f7d067",
@@ -4999,7 +4996,10 @@
     "cloudflare_status:6451fde4a9dfa712",
     "cloudflare_status:79f839d4cd892d9b",
     "aws_status:1c174d74d95fada7",
-    "bleeping_computer:e2ee3ae2fcbaf152"
+    "bleeping_computer:e2ee3ae2fcbaf152",
+    "github_status:9651d6200a433883",
+    "aws_status:15483d4ce1ed3357",
+    "bleeping_computer:0634dbd1b20896e3"
   ],
   "http_cache": {
     "https://jvndb.jvn.jp/ja/rss/jvndb_new.rdf": {
@@ -5033,51 +5033,23 @@
       "last_modified": "Tue, 10 Nov 2026 18:36:02 GMT"
     },
     "https://www.githubstatus.com/history.rss": {
-      "etag": "W/\"9bacfdd29d421b826934814f5a982da9\""
+      "etag": "W/\"3e836728dcf25037dbbbe4957da650da\""
     },
     "https://www.cloudflarestatus.com/history.rss": {
       "last_modified": "Wed, 18 Nov 2026 06:17:40 GMT"
     },
     "https://status.aws.amazon.com/rss/all.rss": {
-      "etag": "\"6b5d528eb2ae7009b4a8ad05027ce28b\"",
-      "last_modified": "Wed, 18 Nov 2026 08:24:36 GMT"
+      "etag": "\"935a16586a961419f9535a55c6802acd\"",
+      "last_modified": "Wed, 18 Nov 2026 09:44:36 GMT"
     },
     "https://status.cloud.google.com/en/feed.atom": {
-      "last_modified": "Wed, 18 Nov 2026 08:24:15 GMT"
+      "last_modified": "Wed, 18 Nov 2026 09:44:40 GMT"
     },
     "https://www.bleepingcomputer.com/feed/": {
-      "etag": "ca30a2fa7a664ac7c72281b1302f8612",
-      "last_modified": "Wed, 18 Nov 2026 08:24:19 GMT"
+      "etag": "d073f82a2cd2620b2e3e3850c40f85f5",
+      "last_modified": "Wed, 18 Nov 2026 09:44:33 GMT"
     }
   },
-  "digest_queue": [
-    {
-      "item_id": "jvn_new:451b610460579ecd",
-      "source_name": "JVN iPedia 新着脆弱性",
-      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月12日）",
-      "url": "https://jvndb.jvn.jp/ja/contents/2026/JVNDB-2026-043496.html",
-      "published_at": "2026-11-16T14:22+09:00",
-      "cve_ids": [],
-      "cvss_score": null
-    },
-    {
-      "item_id": "jvn_advisory:b8600d095a1bd1cb",
-      "source_name": "JVN 脆弱性対策情報",
-      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月12日）",
-      "url": "https://jvn.jp/vu/JVNVU90821966/",
-      "published_at": "2026-11-13T11:00:40+09:00",
-      "cve_ids": [],
-      "cvss_score": null
-    },
-    {
-      "item_id": "jvn_advisory:2279fe0ad4dce0d1",
-      "source_name": "JVN 脆弱性対策情報",
-      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月17日）",
-      "url": "https://jvn.jp/vu/JVNVU99888632/",
-      "published_at": "2026-11-18T09:00:00+09:00",
-      "cve_ids": [],
-      "cvss_score": null
-    }
-  ],
-  "last_digest_date": ""
+  "digest_queue": [],
+  "last_digest_date": "2026-11-18"
 }
