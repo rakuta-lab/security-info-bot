@@ -1,7 +1,5 @@
 {
   "seen_ids": [
-    "msrc_sug:74cafd15ed588539",
-    "msrc_sug:788084dbe2764a3c",
     "msrc_sug:9a793a50f5fa4937",
     "msrc_sug:a2bca578ff9412ee",
     "msrc_sug:0db899f7514db908",
@@ -4999,20 +4997,22 @@
     "bleeping_computer:d67ba698b563b35b",
     "jvn_advisory:67188dd4d229c8d5",
     "jvn_advisory:2688c1de0858372d",
-    "aws_status:a237d642af2da31c"
+    "aws_status:a237d642af2da31c",
+    "jvn_advisory:fe88f840ad9e6ee9",
+    "aws_status:1571155f31ad41c2"
   ],
   "http_cache": {
     "https://jvndb.jvn.jp/ja/rss/jvndb_new.rdf": {
-      "etag": "\"10c226-6607449dda800\"",
-      "last_modified": "Tue, 17 Nov 2026 08:00:32 GMT"
+      "etag": "\"10c226-6608436c391c0\"",
+      "last_modified": "Wed, 18 Nov 2026 03:00:31 GMT"
     },
     "https://jvn.jp/rss/jvn.rdf": {
-      "etag": "\"8795f366dc9d63c8091fe33ada8945aae74563bf\"",
-      "last_modified": "Wed, 18 Nov 2026 03:00:05 GMT"
+      "etag": "\"b795ddba39d945335d10b69b0216e55e499ea75b\"",
+      "last_modified": "Wed, 18 Nov 2026 05:00:04 GMT"
     },
     "https://www.jpcert.or.jp/rss/jpcert.rdf": {
-      "etag": "\"5124-6608376993bc0\"",
-      "last_modified": "Wed, 18 Nov 2026 02:06:47 GMT"
+      "etag": "\"5124-660853a0b4d40\"",
+      "last_modified": "Wed, 18 Nov 2026 04:13:01 GMT"
     },
     "https://www.ipa.go.jp/security/alert-rss.rdf": {
       "last_modified": "Wed, 11 Nov 2026 03:04:07 GMT"
@@ -5033,21 +5033,21 @@
       "last_modified": "Tue, 10 Nov 2026 18:36:02 GMT"
     },
     "https://www.githubstatus.com/history.rss": {
-      "etag": "W/\"7cb471f1ef7f64409bbd834cb224a7e0\""
+      "etag": "W/\"f455364e345ce845ec0561bb30a81f8c\""
     },
     "https://www.cloudflarestatus.com/history.rss": {
       "last_modified": "Tue, 17 Nov 2026 23:05:31 GMT"
     },
     "https://status.aws.amazon.com/rss/all.rss": {
-      "etag": "\"08e346cd0625ba4cad46e8123c59c0ff\"",
-      "last_modified": "Wed, 18 Nov 2026 03:01:16 GMT"
+      "etag": "\"a503c0beea55683ccdd447a9666fe9b4\"",
+      "last_modified": "Wed, 18 Nov 2026 05:10:36 GMT"
     },
     "https://status.cloud.google.com/en/feed.atom": {
-      "last_modified": "Wed, 18 Nov 2026 03:01:45 GMT"
+      "last_modified": "Wed, 18 Nov 2026 05:10:44 GMT"
     },
     "https://www.bleepingcomputer.com/feed/": {
-      "etag": "4f28bb855c3a933858dc932936889b12",
-      "last_modified": "Wed, 18 Nov 2026 02:54:30 GMT"
+      "etag": "d6d79ea69b5ae871429222ab7002a456",
+      "last_modified": "Wed, 18 Nov 2026 05:04:34 GMT"
     }
   },
   "digest_queue": [
