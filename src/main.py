@@ -1,7 +1,7 @@
 import argparse
 import logging
 import os
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -77,6 +77,11 @@ def run(args: argparse.Namespace) -> None:
 
     digest_items = [i for i in classified if i.priority == "digest"]
     realtime_items = [i for i in classified if i.priority != "digest"]
+    logger.info(
+        "分類結果: リアルタイム=%d件, 日次まとめ=%d件",
+        len(realtime_items),
+        len(digest_items),
+    )
 
     if realtime_items and not args.dry_run:
         summarize_items(realtime_items, rules_cfg)
@@ -114,15 +119,16 @@ def run(args: argparse.Namespace) -> None:
     for item in digest_items:
         state.digest_queue.append(item.to_digest_dict())
 
-    # 日次まとめの送信判定
-    now_utc = datetime.now(timezone.utc)
-    today_str = now_utc.strftime("%Y-%m-%d")
+    # 日次まとめの送信判定（JST 08:00以降に1日1回送信）
+    jst = timezone(timedelta(hours=9))
+    now_jst = datetime.now(jst)
+    today_str = now_jst.strftime("%Y-%m-%d")
     digest_cfg = rules_cfg.get("digest", {})
-    send_hour = int(digest_cfg.get("send_hour_utc", 23))
+    send_hour_jst = int(digest_cfg.get("send_hour_jst", 8))
     max_digest = int(digest_cfg.get("max_items_per_digest", 30))
 
     should_send_digest = args.send_digest or (
-        now_utc.hour >= send_hour
+        now_jst.hour >= send_hour_jst
         and state.last_digest_date != today_str
         and len(state.digest_queue) > 0
     )

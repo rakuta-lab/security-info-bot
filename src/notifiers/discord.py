@@ -104,11 +104,20 @@ def _post_webhook(webhook_url: str, payload: dict[str, Any]) -> bool:
 def send_discord_items(items: list[SecurityItem]) -> int:
     """アイテムを適切なDiscordチャンネルへ送信し、送信件数を返す"""
     grouped: dict[str, list[dict[str, Any]]] = {}
+    skipped = 0
     for item in items:
         webhook_url = _resolve_webhook(item)
         if not webhook_url:
+            skipped += 1
             continue
         grouped.setdefault(webhook_url, []).append(build_discord_embed(item))
+
+    if skipped > 0:
+        logger.warning(
+            "Discord Webhook URLが未設定のため %d件の送信をスキップしました。"
+            "GitHub Secrets (DISCORD_WEBHOOK_DEFAULT 等) を確認してください。",
+            skipped,
+        )
 
     sent = 0
     for webhook_url, embeds in grouped.items():
@@ -127,7 +136,12 @@ def send_discord_digest(digest_items: list[dict[str, Any]]) -> bool:
         os.environ.get("DISCORD_WEBHOOK_DIGEST", "").strip()
         or os.environ.get("DISCORD_WEBHOOK_DEFAULT", "").strip()
     )
-    if not webhook_url or not digest_items:
+    if not digest_items:
+        return False
+    if not webhook_url:
+        logger.warning(
+            "DISCORD_WEBHOOK_DIGEST / DISCORD_WEBHOOK_DEFAULT が未設定のため日次まとめをスキップしました。"
+        )
         return False
 
     lines: list[str] = []

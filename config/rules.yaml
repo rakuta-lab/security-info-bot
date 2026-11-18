@@ -88,9 +88,9 @@ routing:
   line:
     - urgent
 
-# 日次まとめ（digest）の配信設定（UTC時刻の指定、JST 08:00 = UTC 23:00）
+# 日次まとめ（digest）の配信設定（日本時間 08:00 以降に1日1回送信）
 digest:
-  send_hour_utc: 23
+  send_hour_jst: 8
   max_items_per_digest: 30
 
 # AI要約（Gemini API）の設定
