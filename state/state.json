@@ -1,14 +1,5 @@
 {
   "seen_ids": [
-    "msrc_sug:34782ee90457ae79",
-    "msrc_sug:f731d85b2df62219",
-    "msrc_sug:c183486807e061b5",
-    "msrc_sug:3d40b2f57e12460b",
-    "msrc_sug:fda923f416171bcc",
-    "msrc_sug:5975e0f90e77da63",
-    "msrc_sug:aead805989d12bc4",
-    "msrc_sug:4751b9355d7ade5e",
-    "msrc_sug:8a0e95ec3b8a0f05",
     "msrc_sug:47cafa1489a312d2",
     "msrc_sug:86eb288ca982d4f7",
     "msrc_sug:cd5b73734b06300a",
@@ -4999,23 +4990,32 @@
     "scannet_security:f79e5286ef07fa05",
     "scannet_security:00d905c538e40578",
     "scannet_security:3247de40bdf8f9ac",
-    "scannet_security:6fb87aa344f1b319"
+    "scannet_security:6fb87aa344f1b319",
+    "jvn_new:7c8f43622999b459",
+    "jvn_new:b7cd3b1935b8bf44",
+    "jvn_new:0cabde313cefa7d5",
+    "jvn_new:a30673f65a95e9d8",
+    "jvn_new:037e3ac40bb3c1df",
+    "jvn_advisory:bb57a561347d7b5f",
+    "jvn_advisory:f06cf2da08bfdeb6",
+    "jvn_advisory:5b521fb0c6b6be92",
+    "ipa_alert:111f9cbd8ab522e3"
   ],
   "http_cache": {
     "https://jvndb.jvn.jp/ja/rss/jvndb_new.rdf": {
-      "etag": "\"118f35-6608867b50800\"",
-      "last_modified": "Wed, 18 Nov 2026 08:00:32 GMT"
+      "etag": "\"11969d-6609854aa3400\"",
+      "last_modified": "Thu, 19 Nov 2026 03:00:32 GMT"
     },
     "https://jvn.jp/rss/jvn.rdf": {
-      "etag": "\"b795ddba39d945335d10b69b0216e55e499ea75b\"",
-      "last_modified": "Wed, 18 Nov 2026 05:00:04 GMT"
+      "etag": "\"8515ce1f369327a88981babce602fe3ea450091b\"",
+      "last_modified": "Thu, 19 Nov 2026 05:00:07 GMT"
     },
     "https://www.jpcert.or.jp/rss/jpcert.rdf": {
-      "etag": "\"5124-66088b6cd71c0\"",
-      "last_modified": "Wed, 18 Nov 2026 08:22:39 GMT"
+      "etag": "\"5124-6609afbeb5d00\"",
+      "last_modified": "Thu, 19 Nov 2026 06:10:28 GMT"
     },
     "https://www.ipa.go.jp/security/alert-rss.rdf": {
-      "last_modified": "Wed, 18 Nov 2026 07:02:49 GMT"
+      "last_modified": "Thu, 19 Nov 2026 06:03:20 GMT"
     },
     "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json": {
       "etag": "\"1c53a9-6607c919f18b0\"",
@@ -5051,5 +5051,5 @@
     }
   },
   "digest_queue": [],
-  "last_digest_date": "2026-11-18"
+  "last_digest_date": "2026-11-19"
 }
