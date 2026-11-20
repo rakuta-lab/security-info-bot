@@ -5003,16 +5003,16 @@
   ],
   "http_cache": {
     "https://jvndb.jvn.jp/ja/rss/jvndb_new.rdf": {
-      "etag": "\"11b7f2-660ac72819400\"",
-      "last_modified": "Fri, 20 Nov 2026 03:00:32 GMT"
+      "etag": "\"11b7f2-660b0a363c800\"",
+      "last_modified": "Fri, 20 Nov 2026 08:00:32 GMT"
     },
     "https://jvn.jp/rss/jvn.rdf": {
       "etag": "\"7c3e8f6f040babea60378a9a3c5c7f35968a0ac5\"",
       "last_modified": "Fri, 20 Nov 2026 01:00:12 GMT"
     },
     "https://www.jpcert.or.jp/rss/jpcert.rdf": {
-      "etag": "\"5124-660aa61a257c0\"",
-      "last_modified": "Fri, 20 Nov 2026 00:32:39 GMT"
+      "etag": "\"5124-660b1086b6dc0\"",
+      "last_modified": "Fri, 20 Nov 2026 08:28:47 GMT"
     },
     "https://www.ipa.go.jp/security/alert-rss.rdf": {
       "last_modified": "Fri, 20 Nov 2026 02:35:17 GMT"
