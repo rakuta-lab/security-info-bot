@@ -1,7 +1,5 @@
 {
   "seen_ids": [
-    "msrc_sug:0a336f77abf5723c",
-    "msrc_sug:10256ad0906ae768",
     "msrc_sug:a5ec44bc560e03be",
     "msrc_sug:615e1bbca2fdc915",
     "msrc_sug:8897082c2086b82c",
@@ -4999,23 +4997,25 @@
     "scannet_security:589bf3ff9f0fe142",
     "scannet_security:8d7773088edb8ad5",
     "scannet_security:254c6ce3e985be6c",
-    "scannet_security:cd9deabe2c054c2b"
+    "scannet_security:cd9deabe2c054c2b",
+    "jvn_advisory:77b02d1e239e67c9",
+    "ipa_alert:376853c590363434"
   ],
   "http_cache": {
     "https://jvndb.jvn.jp/ja/rss/jvndb_new.rdf": {
-      "etag": "\"11b7f2-6609c857d25c0\"",
-      "last_modified": "Thu, 19 Nov 2026 08:00:31 GMT"
+      "etag": "\"11b7f2-660ac72819400\"",
+      "last_modified": "Fri, 20 Nov 2026 03:00:32 GMT"
     },
     "https://jvn.jp/rss/jvn.rdf": {
-      "etag": "\"8515ce1f369327a88981babce602fe3ea450091b\"",
-      "last_modified": "Thu, 19 Nov 2026 05:00:07 GMT"
+      "etag": "\"7c3e8f6f040babea60378a9a3c5c7f35968a0ac5\"",
+      "last_modified": "Fri, 20 Nov 2026 01:00:12 GMT"
     },
     "https://www.jpcert.or.jp/rss/jpcert.rdf": {
-      "etag": "\"5124-6609afbeb5d00\"",
-      "last_modified": "Thu, 19 Nov 2026 06:10:28 GMT"
+      "etag": "\"5124-660aa61a257c0\"",
+      "last_modified": "Fri, 20 Nov 2026 00:32:39 GMT"
     },
     "https://www.ipa.go.jp/security/alert-rss.rdf": {
-      "last_modified": "Thu, 19 Nov 2026 09:04:59 GMT"
+      "last_modified": "Fri, 20 Nov 2026 02:35:17 GMT"
     },
     "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json": {
       "etag": "\"1c53a9-6607c919f18b0\"",
@@ -5051,5 +5051,5 @@
     }
   },
   "digest_queue": [],
-  "last_digest_date": "2026-11-19"
+  "last_digest_date": "2026-11-20"
 }
