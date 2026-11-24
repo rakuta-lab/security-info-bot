@@ -1,7 +1,5 @@
 {
   "seen_ids": [
-    "msrc_sug:3edc2bb34527b87e",
-    "msrc_sug:dda1cc69f919215c",
     "msrc_sug:7409409d1f3ef544",
     "msrc_sug:254017bbc095aaca",
     "msrc_sug:fb824f0246f6e355",
@@ -4999,12 +4997,14 @@
     "scannet_security:e25034e7cd6bafeb",
     "scannet_security:001b789486577843",
     "scannet_security:b03308f082b0ad41",
-    "scannet_security:cf462aaa5f18e330"
+    "scannet_security:cf462aaa5f18e330",
+    "jvn_new:455e39459d1f0016",
+    "jvn_new:dd2a026eace1c803"
   ],
   "http_cache": {
     "https://jvndb.jvn.jp/ja/rss/jvndb_new.rdf": {
-      "etag": "\"102668-660fce9df1400\"",
-      "last_modified": "Tue, 24 Nov 2026 03:00:32 GMT"
+      "etag": "\"102180-661011ac14800\"",
+      "last_modified": "Tue, 24 Nov 2026 08:00:32 GMT"
     },
     "https://jvn.jp/rss/jvn.rdf": {
       "etag": "\"cf13ece62cb5f0874e312362a588f5f5183bf7d6\"",
@@ -5050,6 +5050,16 @@
       "last_modified": "Wed, 18 Nov 2026 09:44:33 GMT"
     }
   },
-  "digest_queue": [],
+  "digest_queue": [
+    {
+      "item_id": "jvn_new:dd2a026eace1c803",
+      "source_name": "JVN iPedia 新着脆弱性",
+      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月19日）",
+      "url": "https://jvndb.jvn.jp/ja/contents/2026/JVNDB-2026-044776.html",
+      "published_at": "2026-11-24T13:26+09:00",
+      "cve_ids": [],
+      "cvss_score": null
+    }
+  ],
   "last_digest_date": "2026-11-20"
 }
