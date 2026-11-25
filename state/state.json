@@ -1,21 +1,5 @@
 {
   "seen_ids": [
-    "msrc_sug:7409409d1f3ef544",
-    "msrc_sug:254017bbc095aaca",
-    "msrc_sug:fb824f0246f6e355",
-    "msrc_sug:04e7abd323637fb0",
-    "msrc_sug:e89b093caee0c99e",
-    "msrc_sug:cc62339dcd6b7c5d",
-    "msrc_sug:fa4bb9fee455bc1b",
-    "msrc_sug:b53848b457c75b09",
-    "msrc_sug:e53091938bb5cf58",
-    "msrc_sug:faa14739f6aa89b1",
-    "msrc_sug:63561d4931eaf0ac",
-    "msrc_sug:6473d370457a74bb",
-    "msrc_sug:f1031838739ea7ce",
-    "msrc_sug:086a7e8195b25eb8",
-    "msrc_sug:9f8c9c4cbc6490ff",
-    "msrc_sug:6068fa20b128b2ec",
     "msrc_sug:166f004993ed06f9",
     "msrc_sug:6add7e7720d77c68",
     "msrc_sug:5d8c26a742808385",
@@ -4999,7 +4983,23 @@
     "scannet_security:b03308f082b0ad41",
     "scannet_security:cf462aaa5f18e330",
     "jvn_new:455e39459d1f0016",
-    "jvn_new:dd2a026eace1c803"
+    "jvn_new:dd2a026eace1c803",
+    "jvn_advisory:27133ac906a602a0",
+    "jvn_advisory:5f9a28961f29ee6d",
+    "scannet_security:2a21c94a4a9f2eb3",
+    "scannet_security:adbff4217599aadd",
+    "scannet_security:401a95448c971f99",
+    "scannet_security:64bf20a4c334e8f7",
+    "scannet_security:88ecad8a2c7ce72e",
+    "scannet_security:928a8ca6e9aa98e8",
+    "scannet_security:91957c525599bbcf",
+    "scannet_security:8375979ad6ad892a",
+    "scannet_security:650b93958264252c",
+    "scannet_security:6329e4ca50cce481",
+    "scannet_security:be7da08a0f64d52e",
+    "scannet_security:6944f2f7a9e6641e",
+    "scannet_security:ac21f3a4b12531b1",
+    "scannet_security:9152ea9511d529a9"
   ],
   "http_cache": {
     "https://jvndb.jvn.jp/ja/rss/jvndb_new.rdf": {
@@ -5007,12 +5007,12 @@
       "last_modified": "Tue, 24 Nov 2026 08:00:32 GMT"
     },
     "https://jvn.jp/rss/jvn.rdf": {
-      "etag": "\"cf13ece62cb5f0874e312362a588f5f5183bf7d6\"",
-      "last_modified": "Tue, 24 Nov 2026 03:00:07 GMT"
+      "etag": "\"6e371440fbd9f9a1f5afd7a1b77617b14fec03b7\"",
+      "last_modified": "Wed, 25 Nov 2026 00:15:05 GMT"
     },
     "https://www.jpcert.or.jp/rss/jpcert.rdf": {
-      "etag": "\"5124-660feae454980\"",
-      "last_modified": "Tue, 24 Nov 2026 05:07:02 GMT"
+      "etag": "\"5124-6610ff1c6b840\"",
+      "last_modified": "Wed, 25 Nov 2026 01:42:49 GMT"
     },
     "https://www.ipa.go.jp/security/alert-rss.rdf": {
       "last_modified": "Tue, 24 Nov 2026 02:32:56 GMT"
@@ -5050,16 +5050,6 @@
       "last_modified": "Wed, 18 Nov 2026 09:44:33 GMT"
     }
   },
-  "digest_queue": [
-    {
-      "item_id": "jvn_new:dd2a026eace1c803",
-      "source_name": "JVN iPedia 新着脆弱性",
-      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月19日）",
-      "url": "https://jvndb.jvn.jp/ja/contents/2026/JVNDB-2026-044776.html",
-      "published_at": "2026-11-24T13:26+09:00",
-      "cve_ids": [],
-      "cvss_score": null
-    }
-  ],
-  "last_digest_date": "2026-11-20"
+  "digest_queue": [],
+  "last_digest_date": "2026-11-25"
 }
