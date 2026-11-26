@@ -1,13 +1,5 @@
 {
   "seen_ids": [
-    "msrc_sug:44cd5c11de30b471",
-    "msrc_sug:5723324d03f4f579",
-    "msrc_sug:c47f9890b85bf84a",
-    "msrc_sug:5bab2291d6fad506",
-    "msrc_sug:b054038d84f78cc0",
-    "msrc_sug:94fad0540308df52",
-    "msrc_sug:9ee83bc8f5a13e8d",
-    "msrc_sug:bc0568b465e8fd18",
     "msrc_sug:7db59948b0cfa276",
     "msrc_sug:543521fb592e9998",
     "msrc_sug:d7323d00b93d58da",
@@ -4999,7 +4991,15 @@
     "jvn_new:5602458057fbeda4",
     "jvn_new:fd7e7551df8870dc",
     "jvn_new:7ce169d1ff0da800",
-    "jvn_new:437a4b3a877387ef"
+    "jvn_new:437a4b3a877387ef",
+    "scannet_security:c768e715f29c972c",
+    "scannet_security:9b25f4c5a4f70105",
+    "scannet_security:84b6cd9ab8547698",
+    "scannet_security:f7fa7eefbf9d29c7",
+    "scannet_security:9e50eb0f9a85d65b",
+    "scannet_security:f20dc077fad8108a",
+    "scannet_security:2aa0b6a52650a831",
+    "scannet_security:f3d1e9aa0da80b71"
   ],
   "http_cache": {
     "https://jvndb.jvn.jp/ja/rss/jvndb_new.rdf": {
