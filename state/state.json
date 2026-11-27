@@ -1,10 +1,5 @@
 {
   "seen_ids": [
-    "msrc_sug:7db59948b0cfa276",
-    "msrc_sug:543521fb592e9998",
-    "msrc_sug:d7323d00b93d58da",
-    "msrc_sug:c7076b0f7f54eb95",
-    "msrc_sug:3789e330ad9535aa",
     "msrc_sug:5a47e429323ef49c",
     "msrc_sug:d6976b1209b2e8ac",
     "msrc_sug:a0e391dd0abeb333",
@@ -4999,20 +4994,25 @@
     "scannet_security:9e50eb0f9a85d65b",
     "scannet_security:f20dc077fad8108a",
     "scannet_security:2aa0b6a52650a831",
-    "scannet_security:f3d1e9aa0da80b71"
+    "scannet_security:f3d1e9aa0da80b71",
+    "jvn_advisory:d82232b2c3f2b043",
+    "jvn_advisory:32b97afb6bf9e884",
+    "scannet_security:eb50254a13d39c52",
+    "scannet_security:2346d7b5c8f1b184",
+    "scannet_security:b94ea56102521eff"
   ],
   "http_cache": {
     "https://jvndb.jvn.jp/ja/rss/jvndb_new.rdf": {
-      "etag": "\"120882-6612956700800\"",
-      "last_modified": "Thu, 26 Nov 2026 08:00:32 GMT"
+      "etag": "\"120882-6613943747640\"",
+      "last_modified": "Fri, 27 Nov 2026 03:00:33 GMT"
     },
     "https://jvn.jp/rss/jvn.rdf": {
-      "etag": "\"d2f2b0f49b645c8989e541b24b80c25a8a2178c4\"",
-      "last_modified": "Thu, 26 Nov 2026 03:00:08 GMT"
+      "etag": "\"921e169d037158ad7a73bd688bbba24a9038c6da\"",
+      "last_modified": "Fri, 27 Nov 2026 03:00:09 GMT"
     },
     "https://www.jpcert.or.jp/rss/jpcert.rdf": {
-      "etag": "\"477c-66126bbb33780\"",
-      "last_modified": "Thu, 26 Nov 2026 04:54:06 GMT"
+      "etag": "\"477c-6613a712c73c0\"",
+      "last_modified": "Fri, 27 Nov 2026 04:24:55 GMT"
     },
     "https://www.ipa.go.jp/security/alert-rss.rdf": {
       "last_modified": "Tue, 24 Nov 2026 02:32:56 GMT"
