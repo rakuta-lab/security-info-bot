@@ -1,7 +1,5 @@
 {
   "seen_ids": [
-    "msrc_sug:5a47e429323ef49c",
-    "msrc_sug:d6976b1209b2e8ac",
     "msrc_sug:a0e391dd0abeb333",
     "msrc_sug:d1d68c1a3cf551a3",
     "msrc_sug:3309f62418c32eba",
@@ -4999,20 +4997,22 @@
     "jvn_advisory:32b97afb6bf9e884",
     "scannet_security:eb50254a13d39c52",
     "scannet_security:2346d7b5c8f1b184",
-    "scannet_security:b94ea56102521eff"
+    "scannet_security:b94ea56102521eff",
+    "jvn_new:3f1de4f86bbaee41",
+    "jvn_new:add6efc4c1bc4bdd"
   ],
   "http_cache": {
     "https://jvndb.jvn.jp/ja/rss/jvndb_new.rdf": {
-      "etag": "\"120882-6613943747640\"",
-      "last_modified": "Fri, 27 Nov 2026 03:00:33 GMT"
+      "etag": "\"1203a1-6613d74476800\"",
+      "last_modified": "Fri, 27 Nov 2026 08:00:32 GMT"
     },
     "https://jvn.jp/rss/jvn.rdf": {
       "etag": "\"921e169d037158ad7a73bd688bbba24a9038c6da\"",
       "last_modified": "Fri, 27 Nov 2026 03:00:09 GMT"
     },
     "https://www.jpcert.or.jp/rss/jpcert.rdf": {
-      "etag": "\"477c-6613a712c73c0\"",
-      "last_modified": "Fri, 27 Nov 2026 04:24:55 GMT"
+      "etag": "\"477c-6613be62df440\"",
+      "last_modified": "Fri, 27 Nov 2026 06:09:13 GMT"
     },
     "https://www.ipa.go.jp/security/alert-rss.rdf": {
       "last_modified": "Tue, 24 Nov 2026 02:32:56 GMT"
