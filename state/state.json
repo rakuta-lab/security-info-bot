@@ -5003,8 +5003,8 @@
   ],
   "http_cache": {
     "https://jvndb.jvn.jp/ja/rss/jvndb_new.rdf": {
-      "etag": "\"1203a1-6614d614bd640\"",
-      "last_modified": "Sat, 28 Nov 2026 03:00:33 GMT"
+      "etag": "\"1203a1-66151922e0a40\"",
+      "last_modified": "Sat, 28 Nov 2026 08:00:33 GMT"
     },
     "https://jvn.jp/rss/jvn.rdf": {
       "etag": "\"921e169d037158ad7a73bd688bbba24a9038c6da\"",
